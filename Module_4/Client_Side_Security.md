@@ -1,0 +1,22 @@
+## Client Side Security 
+- Storing information on client sied like cookies , session id , user token , user credentials
+### 5 areas of concern
+- Storing sensitive information on client:  api key , credential , session key 
+    - Better store data on the server
+    - Encrypt Data
+    - Set token expiry 
+- Authentication 
+    - JWT or OAUTH token
+    - Token Expiry 
+    - MFA
+- Data Integrity 
+    - Create a checksum - different checksum is generated if the data is changed
+- Storage Limit
+    -  We can store 5-10 Mb on local storage - avoid data leaks
+    - Types of Storage
+        - Local Storage - 5-10mb per domain  
+        - Cookies - 4kb - 20kb
+        - Cache -   100mb 
+        - indexdb - 50 - 100mb
+        - Session Storage - 5-10mb per domain  
+- Session Management 
