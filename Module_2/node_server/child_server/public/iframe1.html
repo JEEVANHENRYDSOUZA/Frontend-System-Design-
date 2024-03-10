@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_1.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is iframe1.html</h1>
+    <h1>Child Iframe</h1>
+    <p>Iframe: Click the button below to see a simple clickjacking demonstration.</p>
+
+    <button  onclick="alert('clicked iframe button')">Pay Now</button>
+
+    <script>
+        if (top != self) {
+            top.location = self.location;
+        }
+    </script>
+</body>
+</html>
