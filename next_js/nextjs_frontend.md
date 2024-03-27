@@ -1,0 +1,1 @@
+## This is repo has all the basics needed to builf frontend using nextjs
